@@ -1,0 +1,248 @@
+/* HERO */
+.about-hero {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+  position: relative;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 15, 30, 0.6); /* overlay escuro */
+}
+
+.about-hero h1,
+.about-hero p,
+.about-hero .btn-hero {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn-hero {
+  background: #f5b700;
+  color: #001530;
+  font-weight: bold;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-hero:hover {
+  background: #ffcc33;
+  transform: scale(1.05);
+}
+
+/* INTRO */
+.works-intro {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  color: #2f3b52;
+}
+
+.works-intro h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  line-height: 1.3;
+  position: relative;
+  color: #2f3b52;
+}
+
+.works-intro h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #f5b700;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.works-intro .highlight {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5b700;
+  margin-bottom: 20px;
+}
+
+.works-intro p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+
+/* GALERIA */
+.works-gallery {
+  background: #2f3b52; /* fundo escuro */
+  padding: 80px 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+/* CTA SECTION */
+.cta-section {
+  background: url("../assets/piscina.jpg") center/cover no-repeat;
+  position: relative;
+  padding: 120px 20px;
+  text-align: center; /* centraliza */
+  color: #fff;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.7); /* overlay mais forte */
+}
+
+.cta-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.cta-content h2 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  line-height: 1.3;
+  color: #2f3b52;
+}
+
+.cta-content h2 br {
+  display: none; /* esconde quebra em telas pequenas */
+}
+
+@media (min-width: 768px) {
+  .cta-content h2 br {
+    display: inline; /* só quebra em telas maiores */
+  }
+}
+
+.cta-content p {
+  font-size: 1.25rem;
+  margin-bottom: 35px;
+  line-height: 1.7;
+  color: #000000;
+}
+
+.cta-content p strong {
+  color: #f5b700;
+}
+
+.cta-btn {
+  background: #f5b700;
+  color: #001530;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 16px 34px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cta-btn:hover {
+  background: #ffcc33;
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+/* PARTNERS */
+.partners {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.partners h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #001530;
+}
+
+.partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+
+.partners-logos img {
+  height: 65px; /* tamanho base para todas */
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* Ajustes individuais */
+.logo-indaia {
+  max-height: 200px;
+}
+
+.logo-mannesmann {
+  max-height: 500px;
+}
+
+.logo-viapark {
+  max-height: 120px;
+}
+
+.partners-logos img:hover {
+  filter: grayscale(0%);
+}

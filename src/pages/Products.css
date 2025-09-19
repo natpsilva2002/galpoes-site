@@ -1,0 +1,134 @@
+/* Container */
+.produtos {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.produtos-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.produtos-subtitle {
+  color: #2f3b52;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.produtos-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.produtos-intro {
+  font-size: 1.1rem;
+  color: #313131;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Lista de produtos */
+.produtos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* mais espaço entre os cards */
+}
+
+/* Card principal */
+.produto-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* duas colunas */
+  align-items: stretch;
+  background: #2f3b52; /* fundo escuro elegante */
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 350px; /* deixa o card maior */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* Alterna posição da imagem */
+.produto-card.invertido {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl; /* joga a imagem para a direita */
+}
+
+.produto-card.invertido .produto-info {
+  direction: ltr; /* volta o texto pro normal */
+}
+
+/* Imagem ocupa toda a metade */
+.produto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texto */
+.produto-info {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.produto-info h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.produto-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* Botão */
+.produto-btn {
+  display: inline-block;
+  background: #ffc107;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  align-self: flex-start;
+}
+
+.produto-btn:hover {
+  background: #ffda07;
+  transform: translateY(-3px);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .produto-card,
+  .produto-card.invertido {
+    grid-template-columns: 1fr; /* vira 1 coluna */
+  }
+
+  .produto-info {
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .produto-btn {
+    align-self: center;
+  }
+}

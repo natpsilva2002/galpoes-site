@@ -1,0 +1,143 @@
+/* ===== TOPO ===== */
+.top-bar {
+  background: #002b45;
+  color: #fff;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10%;
+}
+
+.top-bar-left span {
+  margin-right: 20px;
+}
+
+.top-bar-right {
+  font-weight: 500;
+}
+
+/* ===== HEADER PRINCIPAL ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  height: 100px;
+}
+
+/* ===== NAV MENU ===== */
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #f9a825;
+}
+
+/* ===== CTA BOTÃO ===== */
+.header-cta {
+  margin-left: 20px;
+}
+
+.cta-btn {
+  background: #f9a825;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #e6a100;
+}
+
+/* ===== HAMBURGUER ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Animação X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 900px) {
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav.open {
+    transform: translateY(0);
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header-cta {
+    display: none; /* botão CTA some no mobile para simplificar */
+  }
+}
