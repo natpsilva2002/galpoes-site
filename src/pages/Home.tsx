@@ -1,11 +1,11 @@
 // Importando imagem do hero e da seção serviços
 
 import hero1 from "../assets/misto.jpg";
-import hero2 from "../assets/transporte.jpg";
-import hero3 from "../assets/placas.jpg";
+import hero2 from "../assets/pilares.jpg";
+import hero3 from "../assets/placa.jpg";
 import fechamentoImg from "../assets/fechamento.jpg";
 import mistosImg from "../assets/misto.jpg";
-import gpremoldadoImg from "../assets/gpremoldado.jpg";
+import gpremoldadoImg from "../assets/placa.jpg";
 import "./Home.css";
 import autoglassLogo from "../assets/parceiros/autoglass-logo.png";
 import carrefourLogo from "../assets/parceiros/carrefour-logo-1.png";

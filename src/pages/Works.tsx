@@ -3,7 +3,7 @@ import "./Works.css";
 import bgAbout from "../assets/muros.jpg";
 import fechamentoImg from "../assets/fechamento.jpg";
 import mistosImg from "../assets/misto.jpg";
-import gpremoldadoImg from "../assets/gpremoldado.jpg";
+import gpremoldadoImg from "../assets/placa.jpg";
 import servicesImage from "../assets/image1.jpg";
 import tesouraImg from "../assets/tesoura.jpg";
 import muroImg from "../assets/laje.jpg";

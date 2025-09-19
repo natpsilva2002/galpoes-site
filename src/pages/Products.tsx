@@ -7,7 +7,7 @@ function Produtos() {
       titulo: "Placas de fechamento em concreto",
       descricao:
         "As placas de concreto pré-moldadas com aço reforçado oferecem fechamento lateral robusto, acabamento uniforme e alta resistência contra impactos e arrombamentos, sendo muito mais seguras e duráveis que métodos tradicionais como o tijolinho.\n✅ Ideal para galpões industriais, centros logísticos e armazéns.",
-      imagem: "src/assets/placas.JPG",
+      imagem: "src/assets/placa.jpg",
     },
     {
       id: 2,
