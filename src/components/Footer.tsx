@@ -1,14 +1,14 @@
-// src/components/Footer.tsx
 import "./Footer.css";
-import logo from "@assets/logo2.png"; // usando alias @assets
 
 function Footer() {
   return (
     <footer className="footer">
+      
+      
       <div className="footer-container">
         {/* COLUNA 1 - SOBRE */}
         <div className="footer-about">
-          <img src={logo} alt="Logo" className="footer-logo" />
+          <img src="src\assets\logo2.png" alt="Logo" className="footer-logo" />
           <p>
             A Galpões Construções é especializada na construção de galpões pré-moldados e
             artefatos em concreto. Desde 1979 no mercado da construção,
@@ -24,12 +24,12 @@ function Footer() {
             <strong>Telefone:</strong> (31) 98634-5639
           </p>
           <p>
-            <strong>Endereço:</strong> Avenida Juiz Marco Tulio Isaac, 4764
+            <strong>Endereço:</strong> Avenida Juiz Marco Tulio Isaac, 4764
             <br />
-            Betim/MG
+             Betim/MG
           </p>
           <p>
-            <strong>E-mail:</strong> galpoesconstrucoes@gmail.com
+            <strong>E-mail:</strong> galpoesconstrucoes@gmail.com 
           </p>
 
           <div className="social-icons">

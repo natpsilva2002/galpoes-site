@@ -1,12 +1,12 @@
 import "./Services.css";
-import projetoImg from "@assets/ilugalpao.jpg";
-import projetoImg1 from "@assets/placas.jpg";
-import projetoImg2 from "@assets/transporte.jpg";
-import projetoImg3 from "@assets/misto.jpg";
+import projetoImg from "../assets/ilugalpao.jpg";
+import projetoImg1 from "../assets/placas.jpg";
+import projetoImg2 from "../assets/transporte.jpg";
+import projetoImg3 from "../assets/misto.jpg";
 
-import mistoImg from "@assets/misto.jpg";
-import murosImg from "@assets/muros.jpg";
-import bgAbout from "@assets/muros.jpg";
+import mistoImg from "../assets/misto.jpg";
+import murosImg from "../assets/muros.jpg";
+import bgAbout from "../assets/muros.jpg";
 
 function Services() {
   return (

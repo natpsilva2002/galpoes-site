@@ -1,24 +1,24 @@
 // src/pages/Works.tsx
 import "./Works.css";
+import bgAbout from "../assets/muros.jpg";
+import fechamentoImg from "../assets/fechamento.jpg";
+import mistosImg from "../assets/misto.jpg";
+import gpremoldadoImg from "../assets/gpremoldado.jpg";
+import servicesImage from "../assets/image1.jpg";
+import tesouraImg from "../assets/tesoura.jpg";
+import muroImg from "../assets/laje.jpg";
 import { Link } from "react-router-dom";
-import bgAbout from "@assets/muros.jpg";
-import fechamentoImg from "@assets/fechamento.jpg";
-import mistosImg from "@assets/misto.jpg";
-import gpremoldadoImg from "@assets/gpremoldado.jpg";
-import servicesImage from "@assets/image1.jpg";
-import tesouraImg from "@assets/tesoura.jpg";
-import muroImg from "@assets/laje.jpg";
-import autoglassLogo from "@assets/parceiros/autoglass-logo.png";
-import carrefourLogo from "@assets/parceiros/carrefour-logo-1.png";
-import direcionalLogo from "@assets/parceiros/direcional_rgb-25388393.jpg";
-import epaLogo from "@assets/parceiros/epa.png";
-import indaiaLogo from "@assets/parceiros/indaia-logo-png_seeklogo-196358.png";
-import supermixLogo from "@assets/parceiros/logo-supermix-pq.png";
-import mannesmannLogo from "@assets/parceiros/man-novo.png";
-import unileverLogo from "@assets/parceiros/logo-animated.svg";
-import valeLogo from "@assets/parceiros/vale.png";
-import belgoLogo from "@assets/parceiros/belgo.png";
-import FiatLogo from "@assets/parceiros/fiatallis.jpg";
+import autoglassLogo from "../assets/parceiros/autoglass-logo.png";
+import carrefourLogo from "../assets/parceiros/carrefour-logo-1.png";
+import direcionalLogo from "../assets/parceiros/direcional_rgb-25388393.jpg";
+import epaLogo from "../assets/parceiros/epa.png";
+import indaiaLogo from "../assets/parceiros/indaia-logo-png_seeklogo-196358.png";
+import supermixLogo from "../assets/parceiros/logo-supermix-pq.png";
+import mannesmannLogo from "../assets/parceiros/man-novo.png";
+import unileverLogo from "../assets/parceiros/logo-animated.svg";
+import valeLogo from "../assets/parceiros/vale.png";
+import belgoLogo from "../assets/parceiros/belgo.png";
+import FiatLogo from "../assets/parceiros/fiatallis.jpg";
 
 function Works() {
   return (
