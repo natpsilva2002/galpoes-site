@@ -1,16 +1,17 @@
+// src/pages/About.tsx
 import "./About.css";
-import bgAbout from "../assets/muros.jpg";
-
+import bgAbout from "@assets/muros.jpg"; // Usando alias @assets
 
 function About() {
   return (
     <main className="about">
       {/* HERO / CABEÇALHO */}
-      <section className="about-hero" style={{ backgroundImage: `url(${bgAbout})` }}>
+      <section
+        className="about-hero"
+        style={{ backgroundImage: `url(${bgAbout})` }}
+      >
         <h1>Sobre Nós</h1>
-        <p>
-          
-        </p>
+        <p></p>
       </section>
 
       {/* QUEM SOMOS */}
