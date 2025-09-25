@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-container">
         {/* COLUNA 1 - SOBRE */}
         <div className="footer-about">
-          <img src="src\assets\logo2.png" alt="Logo" className="footer-logo" />
+          <img src="src\assets\file.png" alt="Logo" className="footer-logo" />
                     <img src="src\assets\logoestrutural.png" alt="Logo" className="footer-logo2" />
 
           <p>
