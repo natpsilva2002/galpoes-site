@@ -6,37 +6,37 @@ function Produtos() {
       id: 1,
       titulo: "Placas de fechamento em concreto",
       descricao:
-        "As placas de concreto pré-moldadas com aço reforçado oferecem fechamento lateral robusto, acabamento uniforme e alta resistência contra impactos e arrombamentos, sendo muito mais seguras e duráveis que métodos tradicionais como o tijolinho.\n✅ Ideal para galpões industriais, centros logísticos e armazéns.",
-      imagem: "src/assets/placa.jpg",
+        "As placas pré-moldadas em concreto armado com telas metálicas oferecem fechamento lateral robusto, acabamento uniforme e alta resistência contra impactos e arrombamentos, sendo muito mais seguras que métodos tradicionais como alvenaria em geral.\n",
+      imagem: "/assets/placa.jpg",
     },
     {
       id: 2,
       titulo: "Pilares de concreto pré-moldado",
       descricao:
         "Os pilares pré-moldados de concreto armado são projetados para suportar grandes cargas estruturais, garantindo alinhamento perfeito, montagem ágil e segurança total da obra.\n✅ Utilizados em estruturas de galpões, fábricas e centros de distribuição.",
-      imagem: "src/assets/pilares.JPG",
+      imagem: "/assets/pilares.jpg",
     },
     {
       id: 3,
       titulo: "Painéis de ventilação em concreto",
       descricao:
-        "Os painéis de ventilação pré-moldados possibilitam circulação natural de ar e aproveitamento da iluminação nos galpões, sem abrir mão da robustez. Além de funcionais, agregam estética e contribuem para a eficiência energética da edificação.\n✅ Recomendados para indústrias, armazéns e galpões agrícolas.",
-      imagem: "src/assets/veneziana.jpg",
+        "Os painéis de ventilação pré-moldados possibilitam circulação natural de ar e aproveitamento da iluminação nos galpões, sem abrir mão da robustez. Além de funcionais, agregam estética e contribuem para a eficiência energética da edificação.\n",
+      imagem: "/assets/veneziana.jpg",
     },
-    {
-      id: 4,
-      titulo: "Tesouras de Concreto pré-moldado",
-      descricao:
-    "As tesouras de concreto pré-moldado são elementos estruturais projetados para sustentar a cobertura dos galpões com alta eficiência. Fabricadas com concreto armado de qualidade, garantem resistência a grandes vãos, excelente desempenho estrutural e montagem rápida no canteiro.\n✅ Ideais para coberturas de galpões industriais, centros logísticos e armazéns de grande porte.",
-      imagem: "src/assets/tesoura.jpg",
-    },
-    {
-      id: 5,
-      titulo: "Lajes pré-moldadas em concreto",
-      descricao:
-        "As lajes pré-moldadas combinam resistência e praticidade, possibilitando maior rapidez na execução da cobertura e economia de materiais. São projetadas para suportar grandes cargas e garantir durabilidade.\n✅ Utilizadas em galpões industriais, comerciais e logísticos.",
-      imagem: "src/assets/laje.jpg",
-    },
+    // {
+    //   id: 4,
+    //   titulo: "Tesouras de Concreto pré-moldado",
+    //   descricao:
+    //     "As tesouras de concreto pré-moldado são elementos estruturais projetados para sustentar a cobertura dos galpões com alta eficiência. Fabricadas com concreto armado de qualidade, garantem resistência a grandes vãos, excelente desempenho estrutural e montagem rápida no canteiro.\n",
+    //   imagem: "/assets/tesoura.jpg",
+    // },
+    // {
+    //   id: 5,
+    //   titulo: "Lajes pré-moldadas em concreto",
+    //   descricao:
+    //     "As lajes pré-moldadas combinam resistência e praticidade, possibilitando maior rapidez na execução da cobertura e economia de materiais. São projetadas para suportar grandes cargas e garantir durabilidade.\n",
+    //   imagem: "/assets/laje.jpg",
+    // },
   ];
 
   return (
@@ -76,7 +76,6 @@ function Produtos() {
           </article>
         ))}
       </section>
-      
     </main>
   );
 }

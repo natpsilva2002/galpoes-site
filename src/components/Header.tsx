@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import logo from "@assets/logo2.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +23,7 @@ function Header() {
         {/* LOGO */}
         <div className="logo">
           <Link to="/" onClick={() => setMenuOpen(false)}>
-            <img src={logo} alt="Logo Pré-Moldados" />
+            <img src="/assets/file.png" alt="Logo Pré-Moldados" />
           </Link>
         </div>
 

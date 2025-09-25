@@ -22,16 +22,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10%;
+  padding: 12px 15%;
   background: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid #eee;
+  height: 90px;      /* altura fixa do header */
+  overflow: hidden;
 }
 
+
 .logo img {
-  height: 100px;
+  height: 100px;        /* tamanho base */
+  transform: scale(1.2); /* aumenta visualmente */
+  transform-origin: center; 
+  margin-top: 10px;
 }
 
 /* ===== NAV MENU ===== */

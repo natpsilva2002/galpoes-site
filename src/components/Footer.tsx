@@ -9,6 +9,8 @@ function Footer() {
         {/* COLUNA 1 - SOBRE */}
         <div className="footer-about">
           <img src="src\assets\logo2.png" alt="Logo" className="footer-logo" />
+                    <img src="src\assets\logoestrutural.png" alt="Logo" className="footer-logo2" />
+
           <p>
             A Galpões Construções é especializada na construção de galpões pré-moldados e
             artefatos em concreto. Desde 1979 no mercado da construção,
@@ -61,6 +63,8 @@ function Footer() {
       {/* COPYRIGHT */}
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Galpões Construções. Todos os direitos reservados.</p>
+                <p>© {new Date().getFullYear()} Estrutural Estruturas Metálicas LTDA. Todos os direitos reservados.</p>
+
       </div>
     </footer>
   );

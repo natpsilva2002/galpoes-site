@@ -23,6 +23,11 @@
 
 .footer-logo {
   max-width: 160px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+.footer-logo2 {
+  max-width: 135px;
   margin-bottom: 15px;
 }
 
