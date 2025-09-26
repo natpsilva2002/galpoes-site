@@ -86,7 +86,7 @@
 
 /* ========= CARD ========= */
 .service-card {
-  background: #fff;
+  background: url('../assets/asfalt-dark.png') no-repeat center/cover;
   border-radius: 15px;
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -128,7 +128,7 @@
 /* Footer do card */
 .card-footer {
   margin-top: auto;
-  background: #fff;
+  background: url('../assets/asfalt-dark.png') no-repeat center/cover;
   padding: 20px;
 }
 
