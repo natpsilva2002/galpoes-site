@@ -10,7 +10,7 @@ export default defineConfig({
   outDir: 'dist'
 })
 
-  ],
+  ],  
   resolve: {
     alias: {
       '@assets': path.resolve('src/assets') // sem __dirname
