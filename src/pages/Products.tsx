@@ -13,7 +13,7 @@ function Produtos() {
       id: 2,
       titulo: "Pilares de concreto pré-moldado",
       descricao:
-        "Os pilares pré-moldados de concreto armado são projetados para suportar grandes cargas estruturais, garantindo alinhamento perfeito, montagem ágil e segurança total da obra.\n✅ Utilizados em estruturas de galpões, fábricas e centros de distribuição.",
+        "Os pilares pré-moldados de concreto armado são projetados para suportar grandes cargas estruturais, garantindo alinhamento perfeito, montagem ágil e segurança total da obra.\n",
       imagem: "/assets/pilares.jpg",
     },
     {

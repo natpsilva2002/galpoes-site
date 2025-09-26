@@ -19,110 +19,106 @@ function Services() {
           <h2>Conheça Nossos Serviços</h2>
         </div>
 
-        {/* 🔹 NOVOS CARDS (3 em cima, 2 embaixo) */}
-        <div className="top-services-grid">
-          {/* Linha 1 - 3 cards */}
-          <div className="top-row">
-            <div className="service-card">
-              <div className="icon">
-                <i className="fa-solid fa-key"></i>
-              </div>
-              <h3>
-                Galpões Completos <br /> “Chave na Mão”
-              </h3>
-              <p>
-                Executamos obras completas de galpões industriais e logísticos,
-                contemplando todas as etapas:
-                <strong> Fundação</strong>, <strong> estrutura de concreto</strong>,{" "}
-                <strong> fechamento lateral</strong>, <strong> cobertura metálica</strong>{" "}
-                e <strong> acabamento final</strong>.<br /> <br />  Entregamos o galpão{" "}
-                <strong>pronto para uso</strong>, com eficiência construtiva, alta
-                performance estrutural e prazo otimizado.
-              </p>
+        {/* 🔹 NOVOS CARDS */}
+        <div className="services-grid">
+          {/* Card 1 */}
+          <div className="service-card">
+            <div className="card-image">
+              <img src="/assets/galpoes/galpaorca.png" alt="Galpões Completos" />
             </div>
-
-            <div className="service-card">
-              <div className="icon">🏗️</div>
-              <h3>Galpões <br /> (Sem fundação e piso)</h3>
-              <p>
-                Fornecemos a{" "}
-                <strong>estrutura pré-moldada em concreto integral do galpão</strong>,
-                incluindo pilares, placas de fechamento e cobertura metálica.
-                <strong><br /> <br />  A execução de fundação e piso fica sob responsabilidade do cliente.</strong>{" "}
-              
-              </p>
-            </div>
-
-            <div className="service-card">
-              <div className="icon">
-                <i className="fa-solid fa-warehouse"></i>
-              </div>
-              <h3>Galpões  <br />(Sem cobertura)</h3>
-              <p>
-                Construímos galpões com estrutura pré-moldada de concreto,
-                compostos por pilares, painéis de fechamento e elementos estruturais.
-                <strong><br /> <br />  O cliente pode optar por instalar a cobertura metálica posteriormente. </strong>
-                
-              </p>
-            </div>
-            <div className="service-card">
-              <div className="icon">
-                <i className="fas fa-cogs"></i>
-                {/* <img src="/assets/misto.jpg" alt="Galpões Mistos" /> */}
-              </div>
-              <div className="card-content">
-                <h3>Galpões Mistos</h3>
-                <p>
-                  Projetamos e executamos galpões mistos, que{" "}
-                  <strong>
-                    combinam a robustez dos pré-moldados de concreto com a flexibilidade da
-                    estrutura metálica.
-                  </strong>{" "}
-                  <br /> <br /> Essa tecnologia proporciona segurança estrutural, otimização de recursos e
-                  adaptabilidade a diferentes tipos de empreendimentos industriais e
-                  comerciais.
-                </p>
-              </div>
+            <h3>Galpões Completos “Chave na Mão”</h3>
+            <p>
+              Executamos obras completas de galpões industriais e logísticos,
+              contemplando todas as etapas: <strong>Fundação</strong>,{" "}
+              <strong>estrutura de concreto</strong>,{" "}
+              <strong>fechamento lateral</strong>,{" "}
+              <strong>cobertura metálica</strong> e{" "}
+              <strong>acabamento final</strong>.
+              <br />
+              <br />
+              Entregamos o galpão <strong>pronto para uso</strong>, com
+              eficiência construtiva, alta performance estrutural e prazo
+              otimizado.
+            </p>
+            <div className="card-footer">
+              <button className="btn" onClick={() => (window.location.href = "/contato")}>Solicitar Orçamento</button>
             </div>
           </div>
 
-          {/* Linha 2 - 2 cards centralizados */}
-          {/* <div className="bottom-row">
-            <div className="service-card">
-              <div className="card-image">
-                <img src="/assets/misto.jpg" alt="Galpões Mistos" />
-              </div>
-              <div className="card-content">
-                <h3>Galpões Mistos</h3>
-                <p>
-                  Projetamos e executamos galpões mistos, que{" "}
-                  <strong>
-                    combinam a robustez dos pré-moldados de concreto com a flexibilidade da
-                    estrutura metálica.
-                  </strong>{" "}
-                  <br/> <br/> Essa tecnologia proporciona segurança estrutural, otimização de recursos e
-                  adaptabilidade a diferentes tipos de empreendimentos industriais e
-                  comerciais.
-                </p>
-              </div>
+          {/* Card 2 */}
+          <div className="service-card">
+            <div className="card-image">
+              <img
+                src="/assets/galpoes/galpao5.jpg"
+                alt="Galpões (Sem fundação e piso)"
+              />
             </div>
+            <h3>Galpões<br/> (Sem fundação e piso)</h3>
+            <p>
+              Fornecemos a{" "}
+              <strong>
+                estrutura pré-moldada em concreto integral do galpão
+              </strong>
+              , incluindo pilares, placas de fechamento e cobertura metálica.
+              <br />
+              <br />
+              <strong>
+                A execução de fundação e piso fica sob responsabilidade do
+                cliente.
+              </strong>
+            </p>
+            <div className="card-footer">
+              <button className="btn" onClick={() => (window.location.href = "/contato")}>Solicitar Orçamento</button>
+            </div>
+          </div>
 
-            <div className="service-card">
-              <div className="card-image">
-                <img src="/assets/muros.jpg" alt="Muros Pré-Moldados de Concreto" />
-              </div>
-              <div className="card-content">
-                <h3>Muros Pré-Moldados de Concreto</h3>
-                <p>
-                  <strong>Fabricamos e instalamos muros </strong>pré-moldados de concreto de alta
-                  resistência, projetados para oferecer segurança perimetral, durabilidade e
-                  montagem ágil. Ideais para indústrias, centros logísticos, armazéns e
-                  condomínios. Uma solução robusta e eficiente para fechamento de grandes
-                  áreas.
-                </p>
-              </div>
+          {/* Card 3 */}
+          <div className="service-card">
+            <div className="card-image">
+              <img
+                src="/assets/galpoes/galpaoIncom.jpg"
+                alt="Galpões (Sem cobertura)"
+              />
             </div>
-          </div> */}
+            <h3>Galpões<br/>(Sem cobertura)</h3>
+            <p>
+              Construímos galpões com estrutura pré-moldada de concreto,
+              compostos por pilares, painéis de fechamento e elementos
+              estruturais.
+              <br />
+              <br />
+              <strong>
+                O cliente pode optar por instalar a cobertura metálica
+                posteriormente.
+              </strong>
+            </p>
+            <div className="card-footer">
+              <button className="btn" onClick={() => (window.location.href = "/contato")}>Solicitar Orçamento</button>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div className="service-card">
+            <div className="card-image">
+              <img src="/assets/galpoes/misto2.jpg" alt="Galpões Mistos" />
+            </div>
+            <h3>Galpões Mistos</h3>
+            <p>
+              Projetamos e executamos galpões mistos, que{" "}
+              <strong>
+                combinam a robustez dos pré-moldados de concreto com a
+                flexibilidade da estrutura metálica
+              </strong>
+              .
+              <br />
+              <br />
+              Essa tecnologia proporciona segurança estrutural, otimização de
+              recursos e adaptabilidade a diferentes empreendimentos.
+            </p>
+            <div className="card-footer">
+              <button className="btn" onClick={() => (window.location.href = "/contato")}>Solicitar Orçamento</button>
+            </div>
+          </div>
         </div>
 
         {/* Etapas do processo */}
@@ -162,11 +158,11 @@ function Services() {
               PROJETO
             </h2>
             <p>
-              Apresente seu projeto arquitetônico. Nós avaliaremos e elaboraremos um novo
-              projeto estrutural, adequado para o conceito de estruturas pré-fabricadas. Nesta
-              etapa, toda estrutura de seu projeto é redesenhada, de forma a permitir que você
-              saiba exatamente quantas peças serão utilizadas e o cronograma de execução da
-              obra.
+              Apresente seu projeto arquitetônico. Nós avaliaremos e elaboraremos
+              um novo projeto estrutural, adequado para o conceito de estruturas
+              pré-fabricadas. Nesta etapa, toda estrutura de seu projeto é
+              redesenhada, de forma a permitir que você saiba exatamente quantas
+              peças serão utilizadas e o cronograma de execução da obra.
             </p>
           </div>
         </div>
@@ -185,8 +181,8 @@ function Services() {
               PRODUÇÃO
             </h2>
             <p>
-              Nesta etapa, as peças são fabricadas com alta precisão em ambiente controlado,
-              garantindo qualidade e redução de desperdícios.
+              Nesta etapa, as peças são fabricadas com alta precisão em ambiente
+              controlado, garantindo qualidade e redução de desperdícios.
             </p>
           </div>
         </div>
@@ -205,8 +201,9 @@ function Services() {
               TRANSPORTE
             </h2>
             <p>
-              Realizamos o transporte das peças até o local da obra com segurança e eficiência,
-              utilizando frota adequada para grandes dimensões e cargas pesadas.
+              Realizamos o transporte das peças até o local da obra com
+              segurança e eficiência, utilizando frota adequada para grandes
+              dimensões e cargas pesadas.
             </p>
           </div>
         </div>
@@ -225,8 +222,9 @@ function Services() {
               MONTAGEM
             </h2>
             <p>
-              Nossa equipe especializada executa a montagem das estruturas no canteiro de obras,
-              garantindo alinhamento, estabilidade e segurança em cada etapa da construção.
+              Nossa equipe especializada executa a montagem das estruturas no
+              canteiro de obras, garantindo alinhamento, estabilidade e
+              segurança em cada etapa da construção.
             </p>
           </div>
         </div>

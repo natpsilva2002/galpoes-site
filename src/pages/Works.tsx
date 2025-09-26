@@ -42,14 +42,27 @@ function Works() {
             <img src="/assets/placa.jpg" alt="Pré-Moldado" />
           </div>
           <div className="gallery-item">
-            <img src="/assets/image1.jpg" alt="Obra 4" />
+            <img src="/assets/galpoes/galpaorca.png" alt="Obra 4" />
           </div>
           <div className="gallery-item">
-            <img src="/assets/laje.jpg" alt="Obra 5" />
+            <img src="/assets/muros.jpg" alt="Obra 5" />
           </div>
           <div className="gallery-item">
-            <img src="/assets/tesoura.jpg" alt="Obra 6" />
+            <img src="/assets/galpoes/galpao3.jpg" alt="Obra 6" />
           </div>
+          <div className="gallery-item">
+            <img src="/assets/galpoes/galpaoIncom.jpg" alt="Obra 7" />
+          </div>
+          <div className="gallery-item">
+            <img src="/assets/galpoes/galpao2.jpg" alt="Obra 8" />
+          </div>
+          <div className="gallery-item">
+            <img src="/assets/galpoes/galpao5.jpg" alt="Obra 9" />
+          </div>
+          <div className="gallery-item">
+            <img src="/assets/galpoes/muropre.jpg" alt="Obra 9" />
+          </div>
+
         </div>
       </section>
 
@@ -76,7 +89,7 @@ function Works() {
 
       {/* PARCEIROS */}
       <section className="partners">
-        <h2>Nossos Parceiros e Clientes</h2>
+        <h2>Nossos Clientes</h2>
         <div className="partners-logos">
           <img src="/assets/parceiros/autoglass-logo.png" alt="Auto Glass" />
           <img src="/assets/parceiros/carrefour-logo-1.png" alt="Carrefour" />

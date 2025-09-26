@@ -6,6 +6,7 @@
   padding: 100px 20px;
   color: #fff;
   position: relative;
+  
 }
 
 .about-hero::before {
@@ -56,6 +57,9 @@
   padding: 0 20px;
   text-align: center;
   color: #2f3b52;
+  
+  
+  
 }
 
 .works-intro h2 {
@@ -94,27 +98,48 @@
 
 /* GALERIA */
 .works-gallery {
-  background: #2f3b52; /* fundo escuro */
+  /* background: #2f3b52;  */
   padding: 80px 20px;
+  background-image:  url("/assets/back.jpg");
+  background-size: cover;       /* cobre todo o espaço sem distorcer */
+  background-position: center;  /* centraliza a imagem */
+  background-repeat: no-repeat;
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+  column-count: 3;         /* número de colunas no desktop */
+  column-gap: 20px;           /* sem espaçamento lateral */
+  width: 100%;             /* ocupa toda a largura */
+  max-width: 100%;         /* sem limite fixo */
   margin: 0 auto;
+  
 }
 
 .gallery-item {
-  background: #fff;
-  padding: 10px;
-  border-radius: 12px;
+  display: inline-block; /* precisa ser inline-block pra quebrar dentro das colunas */
+  width: 100%; 
+  /* background: #fff; */
+  padding: 3px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  break-inside: avoid;
+  /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  margin: 0 0 0px;         /* remove espaçamento embaixo */
+  break-inside: avoid;  
+}
+@media (max-width: 900px) {
+  .gallery-grid {
+    column-count: 2;
+  }
 }
 
+@media (max-width: 600px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+}
 .gallery-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
@@ -122,9 +147,12 @@
 
 .gallery-item img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 250px;
+  /* display: block; */
   border-radius: 10px;
+  object-fit: cover; 
+  transition: transform 0.3s ease;
+  display: block;
 }
 /* CTA SECTION */
 .cta-section {
@@ -205,7 +233,7 @@
 .partners {
   text-align: center;
   padding: 60px 20px;
-  background: #fff;
+ 
 }
 
 .partners h2 {

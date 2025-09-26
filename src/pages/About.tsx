@@ -6,7 +6,7 @@ function About() {
       {/* HERO / CABEÇALHO */}
       <section
         className="about-hero"
-        style={{ backgroundImage: `url("/images/muros.jpg")` }}
+        style={{ backgroundImage: `url("/assets/muros.jpg")` }}
       >
         <h1>Sobre Nós</h1>
         <p></p>

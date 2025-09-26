@@ -24,19 +24,18 @@
   align-items: center;
   padding: 12px 15%;
   background: #fff;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid #eee;
-  height: 90px;      /* altura fixa do header */
-  overflow: hidden;
+  height: 90px; /* altura fixa no desktop */
+  overflow: visible;
 }
-
 
 .logo img {
   height: 100px;        /* tamanho base */
-  transform: scale(1.2); /* aumenta visualmente */
-  transform-origin: center; 
+  transform: scale(1.2);
+  transform-origin: center;
   margin-top: 10px;
 }
 
@@ -86,21 +85,24 @@
 
 /* ===== HAMBURGUER ===== */
 .hamburger {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  width: 28px;
+  height: 22px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 25px;
-  height: 20px;
-  background: none;
-  border: none;
   cursor: pointer;
+  position: relative;
+  z-index: 10000;
 }
 
 .hamburger span {
   display: block;
   height: 3px;
   width: 100%;
-  background: #333;
+  background: rgb(2, 2, 2) !important; /* força cor preta */
   border-radius: 2px;
   transition: all 0.3s;
 }
@@ -118,20 +120,45 @@
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 900px) {
+  .header {
+    padding: 12px 5%;   /* menos espaço nas laterais */
+    height: auto;       /* libera altura */
+  }
+
+  .logo img {
+    height: 60px;       /* reduz logo */
+    transform: none;    /* remove escala */
+    margin-top: 0;
+  }
+
+  .top-bar {
+    flex-direction: column; /* empilha infos */
+    align-items: flex-start;
+    font-size: 0.8rem;
+    padding: 6px 5%;
+  }
+
+  .top-bar-left span {
+    display: block;
+    margin: 2px 0;
+  }
+
   .nav {
-    position: absolute;
-    top: 70px;
+    position: fixed;      /* em vez de absolute */
+    top: 0;               /* começa do topo da tela */
     left: 0;
     width: 100%;
     background: #fff;
     flex-direction: column;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
+    z-index: 9999;        /* bem acima de tudo */
   }
 
   .nav.open {
-    transform: translateY(0);
+    transform: translateY(0); /* desce suavemente */
   }
+
 
   .menu {
     flex-direction: column;
@@ -144,6 +171,6 @@
   }
 
   .header-cta {
-    display: none; /* botão CTA some no mobile para simplificar */
+    display: none; /* botão CTA some no mobile */
   }
 }

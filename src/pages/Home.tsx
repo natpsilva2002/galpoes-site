@@ -35,6 +35,23 @@ function Home() {
           Solicite um Orçamento
         </button>
       </div>
+       {/* FAIXA DE DESTAQUE */}
+      <section className="stats-bar">
+        <div className="stats-container">
+          <div className="stat">
+            <h3>+1000</h3>
+            <p>Obras Entregues</p>
+          </div>
+          <div className="stat">
+            <h3>+100</h3>
+            <p>Clientes Satisfeitos</p>
+          </div>
+          <div className="stat">
+            <h3>+45</h3>
+            <p>Anos de Mercado</p>
+          </div>
+        </div>
+      </section>
 
       {/* SOBRE A EMPRESA */}
       <section className="sobre">
@@ -205,7 +222,7 @@ function Home() {
         </div>
       </section>
 
-      {/* FAIXA DE DESTAQUE */}
+      {/* FAIXA DE DESTAQUE
       <section className="stats-bar">
         <div className="stats-container">
           <div className="stat">
@@ -221,7 +238,7 @@ function Home() {
             <p>Anos de Mercado</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* PARCEIROS */}
       <section className="partners">
