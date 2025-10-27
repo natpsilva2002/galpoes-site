@@ -10,7 +10,7 @@ function Header() {
       {/* ===== TOPO (contatos rápidos) ===== */}
       <div className="top-bar">
         <div className="top-bar-left">
-          <span>📞 (31)   98634-5639</span>
+          <span>📞 (31) 99797-9020</span>
           <span>✉️galpoesconstrucoes@gmail.com </span>
         </div>
         <div className="top-bar-right">

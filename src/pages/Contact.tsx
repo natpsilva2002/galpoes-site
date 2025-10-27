@@ -38,7 +38,7 @@ function Contato() {
         <div className="contato-col">
           <h3>Comercial</h3>
           <p className="phone">
-            <FaPhoneAlt className="icon" /> (31) 9 8634-5639
+            <FaPhoneAlt className="icon" /> (31) 99797-9020
           </p>
           <p className="email">
             <FaEnvelope className="icon" /> galpoesconstrucoes@gmail.com

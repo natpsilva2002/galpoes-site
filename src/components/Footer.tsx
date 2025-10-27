@@ -23,7 +23,7 @@ function Footer() {
         <div className="footer-contacts">
           <h3>Contatos</h3>
           <p>
-            <strong>Telefone:</strong> (31) 98634-5639
+            <strong>Telefone:</strong> (31) 99797-9020
           </p>
           <p>
             <strong>Endereço:</strong> Avenida Juiz Marco Tulio Isaac, 4764
